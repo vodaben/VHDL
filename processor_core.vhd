@@ -161,8 +161,25 @@ begin
 						else
 							IF_ID_INSTR_31_0_Q<="00000000000000000000000000000000";
 						end if;
-						
 					-- ID/EX update
+
+					-- EX/MEM update
+						EX_MEM_ALUDOut_31_0_Q <= EX_MEM_ALUConOut_31_0_D;
+						EX_MEM_RegWrite_0_0_Q <= EX_MEM_RegWrite_0_0_D;
+						EX_MEM_MemToReg_0_0_Q <= EX_MEM_MemToReg_0_0_D;
+						EX_MEM_MemWrite_0_Q <= EX_MEM_MemWrite_0_D;
+						EX_MEM_WriteData_31_0_Q <= EX_MEM_WriteData_31_0_D;
+						EX_MEM_WriteReg_31_0_Q <= EX_MEM_WriteReg_31_0_D;
+					-- EX/MEM update
+
+					-- MEM/WB update
+						MEM_WB_RegWrite_0_0_Q <= MEM_WB_RegWrite_0_0_D;
+						MEM_WB_MemToReg_0_0_Q <= MEM_WB_MemToReg_0_0_D;
+						MEM_WB_ReadData_31_0_Q <= MEM_WB_ReadData_31_0_D;
+						MEM_WB_ALUDOut_31_0_Q <= MEM_WB_ALUDOut_31_0_D;
+						MEM_WB_WriteReg_0_0_Q <= MEM_WB_WriteReg_0_0_D;
+					-- MEM/WB update
+
 				-- end update
 
 		end if;		
