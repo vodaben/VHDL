@@ -103,13 +103,13 @@ architecture arch_processor_core of processor_core is
 
 	signal EX_MEM_ALUDOut_31_0_Q, EX_MEM_ALUConOut_31_0_D : std_logic_vector(31 downto 0);
 	signal EX_MEM_RegWrite_0_0_Q, EX_MEM_RegWrite_0_0_D : std_logic;
-	signal EX_MEM_MemToReg_0_0_Q, EX_MEM_MemToReg_0_0_Q : std_logic;
-	signal EX_MEM_MemWrite_0_Q, EX_MEM_MemWrite_0_Q : std_logic;
+	signal EX_MEM_MemToReg_0_0_Q, EX_MEM_MemToReg_0_0_D : std_logic;
+	signal EX_MEM_MemWrite_0_Q, EX_MEM_MemWrite_0_D : std_logic;
 	signal EX_MEM_WriteData_31_0_Q, EX_MEM_WriteData_31_0_D : std_logic_vector(31 downto 0);
 	signal EX_MEM_WriteReg_31_0_Q, EX_MEM_WriteReg_31_0_D : std_logic_vector(31 downto 0);
 
 	signal MEM_WB_RegWrite_0_0_Q, MEM_WB_RegWrite_0_0_D : std_logic;
-	signal MEM_WB_MemToReg_0_0_Q, MEM_WB_MemToReg_0_0_Q : std_logic;
+	signal MEM_WB_MemToReg_0_0_Q, MEM_WB_MemToReg_0_0_D : std_logic;
 	signal MEM_WB_ReadData_31_0_Q, MEM_WB_ReadData_31_0_D : std_logic_vector(31 downto 0);
 	signal MEM_WB_ALUDOut_31_0_Q, MEM_WB_ALUDOut_31_0_D : std_logic_vector(31 downto 0);
 	signal MEM_WB_WriteReg_0_0_Q, MEM_WB_WriteReg_0_0_D : std_logic;
